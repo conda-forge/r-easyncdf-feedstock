@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/easyNCDF_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/easyNCDF/easyNCDF_{{ version }}.tar.gz
-  sha256: 5a9a7ef28e23d2ad4b4e495accc2c31e95e64b8beec18731343d0abe180dcbdc
+  sha256: 3d7ac629d959111180283bf314f1aa77259da418bb46ada28bc2c4e47ea1d7b9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -42,11 +42,10 @@ test:
 about:
   home: https://earth.bsc.es/gitlab/es/easyNCDF/wikis/home
   license: LGPL-3.0-only
-  summary: Set of wrappers for the 'ncdf4' package to simplify and extend its reading/writing
-    capabilities into/from multidimensional R arrays.
+  summary: Set of wrappers for the 'ncdf4' package to simplify and extend its reading/writing capabilities into/from multidimensional R arrays.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
