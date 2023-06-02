@@ -1,11 +1,11 @@
-About r-easyncdf
-================
+About r-easyncdf-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-easyncdf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://earth.bsc.es/gitlab/es/easyNCDF/wikis/home
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-easyncdf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Set of wrappers for the 'ncdf4' package to simplify and extend its reading/writing capabilities into/from multidimensional R arrays.
 
