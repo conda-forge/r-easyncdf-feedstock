@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/easyNCDF_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/easyNCDF/easyNCDF_{{ version }}.tar.gz
-  sha256: 3d7ac629d959111180283bf314f1aa77259da418bb46ada28bc2c4e47ea1d7b9
+  sha256: 8c956844d1881efff4b4d80a70f92dd3eafef7159b33865acfc9f1e75444034e
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
