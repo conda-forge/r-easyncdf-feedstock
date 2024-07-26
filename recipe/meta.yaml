@@ -1,6 +1,5 @@
 {% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-easyncdf
@@ -13,8 +12,7 @@ source:
   sha256: 8c956844d1881efff4b4d80a70f92dd3eafef7159b33865acfc9f1e75444034e
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
